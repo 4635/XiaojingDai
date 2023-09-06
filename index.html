@@ -1,0 +1,1114 @@
+<!doctype html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: September 6, 2023 -->
+<html lang=en-us>
+    <head>
+        <meta charset=utf-8>
+        <meta name=viewport content="width=device-width,initial-scale=1">
+        <meta http-equiv=x-ua-compatible content="IE=edge">
+        <meta name=generator content="Wowchemy 5.7.0 for Hugo">
+        <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+        <link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+        <link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media=print onload='this.media="all"'>
+        <link rel=stylesheet href=/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css media=print onload='this.media="all"'>
+        <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin=anonymous media=print onload='this.media="all"'>
+        <link rel=stylesheet href=/css/wowchemy.a5693e00993770ec38b7d5b7b107ddd1.css>
+        <link rel=stylesheet href=/css/libs/chroma/github-light.min.css title=hl-light media=print onload='this.media="all"'>
+        <link rel=stylesheet href=/css/libs/chroma/dracula.min.css title=hl-dark media=print onload='this.media="all"' disabled>
+        <meta name=author content="Yifan Zhang">
+        <meta name=description content="Yifan is a researcher focusing on AI for software engineering, graph neural networks, domain generalization and medical imaging. For the time being, he is pursuing his Ph.D. in Computer Science at Vanderbilt University, affiliated with Institute for Software Integrated Systems.">
+        <link rel=alternate hreflang=en-us href=https://coderdoge.com/>
+        <link rel=canonical href=https://coderdoge.com/>
+        <link rel=manifest href=/manifest.webmanifest>
+        <link rel=icon type=image/png href=/media/icon_hub9520f83088203cfdc646e007e93dc1d_597548_32x32_fill_lanczos_center_3.png>
+        <link rel=apple-touch-icon type=image/png href=/media/icon_hub9520f83088203cfdc646e007e93dc1d_597548_180x180_fill_lanczos_center_3.png>
+        <meta name=theme-color content="#1565c0">
+        <meta property="twitter:card" content="summary">
+        <meta property="twitter:site" content="@CoderDoge1108">
+        <meta property="twitter:creator" content="@CoderDoge1108">
+        <meta property="twitter:image" content="https://coderdoge.com/media/icon_hub9520f83088203cfdc646e007e93dc1d_597548_512x512_fill_lanczos_center_3.png">
+        <meta property="og:site_name" content="Yifan Zhang">
+        <meta property="og:url" content="https://coderdoge.com/">
+        <meta property="og:title" content="Yifan Zhang">
+        <meta property="og:description" content="Yifan is a researcher focusing on AI for software engineering, graph neural networks, domain generalization and medical imaging. For the time being, he is pursuing his Ph.D. in Computer Science at Vanderbilt University, affiliated with Institute for Software Integrated Systems.">
+        <meta property="og:image" content="https://coderdoge.com/media/icon_hub9520f83088203cfdc646e007e93dc1d_597548_512x512_fill_lanczos_center_3.png">
+        <meta property="og:locale" content="en-us">
+        <meta property="og:updated_time" content="2030-06-01T13:00:00+00:00">
+        <script type=application/ld+json>
+            {"@context":"https://schema.org","@type":"WebSite","potentialAction":{"@type":"SearchAction","target":"https://coderdoge.com?q={search_term_string}","query-input":"required name=search_term_string"},"url":"https://coderdoge.com"}
+        </script>
+        <script src=https://identity.netlify.com/v1/netlify-identity-widget.js></script>
+        <link rel=alternate href=/index.xml type=application/rss+xml title="Yifan Zhang">
+        <title>Yifan Zhang</title>
+    </head>
+    <body id=top data-spy=scroll data-offset=70 data-target=#navbar-main class=page-wrapper>
+        <script src=/js/wowchemy-init.min.e30f5b1eda0d3e8f556d60890f98926f.js></script>
+        <aside class=search-modal id=search>
+            <div class=container>
+                <section class=search-header>
+                    <div class="row no-gutters justify-content-between mb-3">
+                        <div class=col-6>
+                            <h1>Search</h1>
+                        </div>
+                        <div class="col-6 col-search-close">
+                            <a class=js-search href=# aria-label=Close>
+                                <i class="fas fa-times-circle text-muted" aria-hidden=true></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id=search-box>
+                        <input name=q id=search-query placeholder=Search... autocapitalize=off autocomplete=off autocorrect=off spellcheck=false type=search class=form-control aria-label=Search...>
+                    </div>
+                </section>
+                <section class=section-search-results>
+                    <div id=search-hits></div>
+                </section>
+            </div>
+        </aside>
+        <div class="page-header header--fixed">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
+                    <div class=container-xl>
+                        <div class="d-none d-lg-inline-flex">
+                            <a class=navbar-brand href=/>Yifan Zhang</a>
+                        </div>
+                        <button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar-content aria-expanded=false aria-label="Toggle navigation">
+                            <span>
+                                <i class="fas fa-bars"></i>
+                            </span>
+                        </button>
+                        <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                            <a class=navbar-brand href=/>Yifan Zhang</a>
+                        </div>
+                        <div class="navbar-collapse main-menu-item collapse justify-content-start" id=navbar-content>
+                            <ul class="navbar-nav d-md-inline-flex">
+                                <li class=nav-item>
+                                    <a class=nav-link href=/#about data-target=#about>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class=nav-item>
+                                    <a class=nav-link href=/#news data-target=#news>
+                                        <span>News</span>
+                                    </a>
+                                </li>
+                                <li class=nav-item>
+                                    <a class=nav-link href=/#publications data-target=#publications>
+                                        <span>Publications</span>
+                                    </a>
+                                </li>
+                                <li class=nav-item>
+                                    <a class=nav-link href=/#experience data-target=#experience>
+                                        <span>Experience</span>
+                                    </a>
+                                </li>
+                                <li class=nav-item>
+                                    <a class=nav-link href=/#awards data-target=#awards>
+                                        <span>Awards</span>
+                                    </a>
+                                </li>
+                                <li class=nav-item>
+                                    <a class=nav-link href=/#services data-target=#services>
+                                        <span>Services</span>
+                                    </a>
+                                </li>
+                                <li class=nav-item>
+                                    <a class=nav-link href=/#contact data-target=#contact>
+                                        <span>Contact</span>
+                                    </a>
+                                </li>
+                                <li class=nav-item>
+                                    <a class=nav-link href=/uploads/resume.pdf>
+                                        <span>CV</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                            <li class="nav-item d-none d-lg-inline-flex">
+                                <a class=nav-link href=https://twitter.com/CoderDoge1108 data-toggle=tooltip data-placement=bottom title="Follow me on Twitter" target=_blank rel=noopener aria-label="Follow me on Twitter">
+                                    <i class="fab fa-twitter" aria-hidden=true></i>
+                                </a>
+                            </li>
+                            <li class=nav-item>
+                                <a class="nav-link js-search" href=# aria-label=Search>
+                                    <i class="fas fa-search" aria-hidden=true></i>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown theme-dropdown">
+                                <a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label="Display preferences">
+                                    <i class="fas fa-moon" aria-hidden=true></i>
+                                </a>
+                                <div class=dropdown-menu>
+                                    <a href=# class="dropdown-item js-set-theme-light">
+                                        <span>Light</span>
+                                    </a>
+                                    <a href=# class="dropdown-item js-set-theme-dark">
+                                        <span>Dark</span>
+                                    </a>
+                                    <a href=# class="dropdown-item js-set-theme-auto">
+                                        <span>Automatic</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class=page-body>
+            <span class="js-widget-page d-none"></span>
+            <section id=about class="home-section wg-about">
+                <div class=home-section-bg></div>
+                <div class=container>
+                    <div class=row>
+                        <div class="col-12 col-lg-4">
+                            <div id=profile>
+                                <img class="avatar avatar-circle" width=270 height=270 src=/authors/admin/avatar_hud842df2f900d84499d52ea54239a246f_1195075_270x270_fill_lanczos_center_3.png alt="Yifan Zhang">
+                                <div class=portrait-title>
+                                    <h2>Yifan Zhang</h2>
+                                    <h3>Ph.D. Student at Vanderbilt University</h3>
+                                    <h3>
+                                        <a href=https://www.vanderbilt.edu/ target=_blank rel=noopener>
+                                            <span>Vanderbilt University</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <ul class=network-icon aria-hidden=true>
+                                    <li>
+                                        <a href=/#contact aria-label=envelope>
+                                            <i class="fas fa-envelope big-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=https://twitter.com/CoderDoge1108 target=_blank rel=noopener aria-label=twitter>
+                                            <i class="fab fa-twitter big-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://scholar.google.com/citations?hl=en&user=PLEmqisAAAAJ" target=_blank rel=noopener aria-label=graduation-cap>
+                                            <i class="fas fa-graduation-cap big-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=https://github.com/CoderDoge1108 target=_blank rel=noopener aria-label=github>
+                                            <i class="fab fa-github big-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=https://www.linkedin.com/in/coderdoge/ target=_blank rel=noopener aria-label=linkedin>
+                                            <i class="fab fa-linkedin big-icon"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <h1>Biography</h1>
+                            <div class=article-style>
+                                <p>
+                                    Yifan Zhang (中文: 张一凡, 日本語: ちょういっパン, Русский: Чжан Ифань) is a Ph.D. student in Computer Science at <a href=https://www.vanderbilt.edu/ target=_blank rel=noopener>Vanderbilt University (Vandy)</a>
+                                    , under the supervision of Prof. Kevin J. Leach and Prof. Yu Huang at the Institute for Software Integrated Systems (ISIS). He is also jointly pursuing the Online Master of Science in Computer Science (OMSCS) at <a href=https://www.gatech.edu/ target=_blank rel=noopener>Georgia Institute of Technology (GaTech)</a>
+                                    . Before joining Vanderbilt &GaTech, he earned his B.A., B.Eng., and M.Eng. from <a href=https://www.cup.edu.cn/english/ target=_blank rel=noopener>China University of Petroleum (CUP)</a>
+                                    at Beijing and worked as a data scientist at the Intelligent Risk Management Lab at <a href=https://corporate.jd.com/home target=_blank rel=noopener>JD.COM</a>
+                                    . He has also worked as a research associate at the <a href=https://www.hku.hk/ target=_blank rel=noopener>University of Hong Kong (HKU)</a>
+                                    and <a href=https://duke.edu/ target=_blank rel=noopener>Duke University (Duke)</a>
+                                    . His research interests lie in AI for programming languages (AI4Code), code structure learning, cognitive process in software engineering, binary code analysis, and medical imaging.
+                                </p>
+                            </div>
+                            <div class=row>
+                                <div class=col-md-5>
+                                    <div class=section-subheading>Interests</div>
+                                    <ul class="ul-interests mb-0">
+                                        <li>AI for Programming Languages (AI4Code)</li>
+                                        <li>Code Structure Learning</li>
+                                        <li>Cognitive Process in Software Engineering</li>
+                                        <li>Binary Code analysis</li>
+                                        <li>Medical Imaging</li>
+                                    </ul>
+                                </div>
+                                <div class=col-md-7>
+                                    <div class=section-subheading>Education</div>
+                                    <ul class="ul-edu fa-ul mb-0">
+                                        <li>
+                                            <i class="fa-li fas fa-graduation-cap"></i>
+                                            <div class=description>
+                                                <p class=course>Vanderbilt University, 2022-2026</p>
+                                                <p class=institution>Ph.D. in Computer Science (AI for Software Engineering)</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fas fa-graduation-cap"></i>
+                                            <div class=description>
+                                                <p class=course>Georgia Institute of Technology, 2022-2025</p>
+                                                <p class=institution>M.Sc. in Computer Science (Computing Systems)</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fas fa-graduation-cap"></i>
+                                            <div class=description>
+                                                <p class=course>China University of Petroleum, 2012-2019</p>
+                                                <p class=institution>B.A., B.Eng., M.Eng. in English &Petroleum Engineering</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id=news class="home-section wg-markdown">
+                <div class=home-section-bg></div>
+                <div class=container>
+                    <div class=row>
+                        <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                            <h1 class=mb-0>News</h1>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <ul>
+                                <li>
+                                    <p>
+                                        [09/05/2023] One collaborative paper got accepted to <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42" target=_blank rel=noopener>IEEE TMI</a>
+                                        .
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [07/13/2023] Invited as a PC member for <a href=https://aaai.org/Conferences/AAAI-24/ target=_blank rel=noopener>AAAI 2024</a>
+                                        regular track.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [07/07/2023] One collaborative paper got accepted to <a href=https://conf.researchr.org/home/ase-2023 target=_blank rel=noopener>ASE 2023</a>
+                                        NIER track.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [03/19/2023] Invited as a PC member for <a href=https://mlsys.org/Conferences/2023 target=_blank rel=noopener>MLSys 2023</a>
+                                        artifact evaluation track.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [03/02/2023] One paper got accepted to <a href=https://conf.researchr.org/home/icse-2023 target=_blank rel=noopener>ICSE 2023</a>
+                                        workshops.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [03/02/2023] Accepted a research intern position at <a href=https://www.bytedance.com/en/ target=_blank rel=noopener>ByteDance</a>
+                                        in San Jose, CA, USA.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [02/06/2023] Invited as a PC member for <a href=https://conferences.miccai.org/2023/en/ target=_blank rel=noopener>MICCAI 2023</a>
+                                        regular track.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [01/06/2023] Invited as a PC member for <a href=https://ncsu-dk-lab.github.io/workshops/dcaa@2023/ target=_blank rel=noopener>AAAI-DCAA 2023</a>
+                                        .
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [12/04/2022] Invited as a Junior PC member for <a href=https://conf.researchr.org/track/msr-2023/msr-2023-technical-papers target=_blank rel=noopener>MSR 2023</a>
+                                        technical track.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [11/28/2022] Attended <a href=https://nips.cc/ target=_blank rel=noopener>NeurIPS 2022</a>
+                                        physically in New Orleans, LA, USA.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [10/10/2022] Attended <a href=https://conf.researchr.org/home/ase-2022 target=_blank rel=noopener>ASE 2022</a>
+                                        physically in Detroit, MI, USA and presented one paper.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [09/22/2022] Attended <a href=https://conferences.miccai.org/2022/en/ target=_blank rel=noopener>MICCAI 2022</a>
+                                        virtually in Singapore and presented one paper.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [08/05/2022] One paper got accepted to <a href=https://conf.researchr.org/home/ase-2022 target=_blank rel=noopener>ASE 2022</a>
+                                        doctoral symposium.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [08/01/2022] Invited as a PC member for <a href=https://aaai.org/Conferences/AAAI-23/ target=_blank rel=noopener>AAAI 2023</a>
+                                        regular track.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [07/18/2022] One paper got accepted to <a href=https://conferences.miccai.org/2022/en/ target=_blank rel=noopener>MICCAI 2022</a>
+                                        workshops.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [07/02/2022] Invited as a PC member for <a href=https://conferences.miccai.org/2022/en/ target=_blank rel=noopener>MICCAI-CaPTion 2022</a>
+                                        .
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        [06/01/2022] Started my Ph.D. in Computer Science at <a href=https://www.vanderbilt.edu/ target=_blank rel=noopener>Vanderbilt University</a>
+                                        .
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id=publications class="home-section wg-collection">
+                <div class=home-section-bg></div>
+                <div class=container>
+                    <div class=row>
+                        <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                            <h1 class=mb-0>Publications</h1>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <h3 id=preprints>Preprints</h3>
+                            <p>
+                                <strong>Yifan Zhang</strong>
+                                , Haoyu Dong, Nicholas Konz, Hanxue Gu, Maciej Mazurowski: <a href=https://arxiv.org/abs/2111.11546v1 target=_blank rel=noopener>REPLICA: Enhanced Feature Pyramid Network by Local Image Translation and Conjunct Attention for High-Resolution Breast Tumor Detection</a>
+                                . Preprint.
+                            </p>
+                            <h3 id=submitted--working-papers>Submitted &Working Papers</h3>
+                            <p>
+                                Yichang He, <strong>Yifan Zhang</strong>
+                                , Yunpeng Fan, U-Xuan Tan,: <a href>Real-time Vibration Compensation with Long Short-term Memory Recurrent Neural Network and Adaptive Filter</a>
+                                , Under Review by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516" target=_blank rel=noopener>IEEE-TMech</a>
+                                .
+                            </p>
+                            <p>
+                                <strong>Yifan Zhang</strong>
+                                , Chen Huang, Yueke Zhang, Kevin Cao, Scott Thomas Anderson, Huajie (Jay) Shao, Kevin Leach, Yu Huang: <a href=https://arxiv.org/abs/2210.05102 target=_blank rel=noopener>COMBO: Pre-Training Representations of Binary Code Using Contrastive Learning</a>
+                                . Under Review.
+                            </p>
+                            <p>
+                                <strong>Yifan Zhang</strong>
+                                , Junwen Yang, Haoyu Dong, Qingchen Wang, Huajie (Jay) Shao, Kevin Leach, Yu Huang: <a href=https://arxiv.org/abs/2208.08067 target=_blank rel=noopener>ASTRO: An AST-Assisted Approach for Generalizable Neural Clone Detection</a>
+                                . Accepted by <a href=https://intense23.github.io/ target=_blank rel=noopener>ICSEW 2023</a>
+                                .
+                            </p>
+                            <p>
+                                Haoyu Dong, <strong>Yifan Zhang</strong>
+                                , Hanxue Gu, Nicholas Konz, Maciej Mazurowski: <a href>SwinSSL: Sliding-Window based Self-Supervised Learning Framework for Anomaly Detection</a>
+                                . Revision from <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42" target=_blank rel=noopener>IEEE-TMI</a>
+                                .
+                            </p>
+                            <p>
+                                Haoyu Dong, <strong>Yifan Zhang</strong>
+                                , Nicholas Konz, Hanxue Gu, Maciej Mazurowski: <a href>Localized Semi-Supervised Anomaly Detection for Breast Tomosynthesis Lesion Screening</a>
+                                . Under Review by <a href=https://www.sciencedirect.com/journal/medical-image-analysis target=_blank rel=noopener>MIA</a>
+                                .
+                            </p>
+                            <p>
+                                Chen Huang, <strong>Yifan Zhang</strong>
+                                , Kevin Leach, Yu Huang, Wenqiang Lei, Jiancheng Lv: <a href>Cross-Domain Filters for Graph Convolutional Networks by Multiple Kernel Learning</a>
+                                . Under Review by <a href=https://ijcai-23.org/ target=_blank rel=noopener>IJCAI 2023</a>
+                                .
+                            </p>
+                            <h3 id=journal--conference-papers>Journal &Conference Papers</h3>
+                            <!-- 
+
+<div class="alert alert-note">
+  <div>
+    Quickly discover relevant content by <a href="./publication/">filtering publications</a>.
+  </div>
+</div>
+ -->
+                            <div class="pub-list-item view-citation" style=margin-bottom:1rem>
+                                <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+                                <span class="article-metadata li-cite-author">
+                                    <span>Yifan Zhang</span>
+                                </span>
+                                (2022).
+<a href=/publication/ase-ds-2022/>Leveraging Artificial Intelligence on Binary Code Comprehension</a>
+                                .
+In <em>ASE-DS 2022</em>
+                                .
+                                <p>
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href=https://arxiv.org/pdf/2210.05103.pdf target=_blank rel=noopener>PDF</a>
+                                    <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename=/publication/ase-ds-2022/cite.bib>Cite</a>
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://drive.google.com/file/d/1zZ0MeG8zQmkaI89ZvHlSh9zAA2rxEZdR/view?usp=share_link" target=_blank rel=noopener>Poster</a>
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://docs.google.com/presentation/d/1Mxo0TUACmr6PfATR09kIf-ioT00dCFDV/edit?usp=share_link&ouid=115635912349142150435&rtpof=true&sd=true" target=_blank rel=noopener>Slides</a>
+                                </p>
+                            </div>
+                            <div class="pub-list-item view-citation" style=margin-bottom:1rem>
+                                <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+                                <span class="article-metadata li-cite-author">
+                                    <span>Yifan Zhang</span>
+                                    , <span>Haoyu Dong</span>
+                                    , <span>Nicholas Konz</span>
+                                    , <span>Hanxue Gu</span>
+                                    , <span>Maciej A. Mazurowski</span>
+                                </span>
+                                (2022).
+<a href=/publication/miccaiw-2022/>Lightweight Transformer Backbone for Medical Object Detection</a>
+                                .
+In <em>MICCAIW 2022</em>
+                                .
+                                <p>
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href=https://link.springer.com/chapter/10.1007/978-3-031-17979-2_5 target=_blank rel=noopener>PDF</a>
+                                    <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename=/publication/miccaiw-2022/cite.bib>Cite</a>
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://drive.google.com/file/d/1xQqdswytbMpi0NKYHPh0iOarauaSJvk0/view?usp=share_link" target=_blank rel=noopener>Poster</a>
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://docs.google.com/presentation/d/1CP7aJMxLzJxfqygAoVfVFYMYx4z5t_Np/edit?usp=share_link&ouid=115635912349142150435&rtpof=true&sd=true" target=_blank rel=noopener>Slides</a>
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://drive.google.com/file/d/1JeHVXsw3qUI-_LhGjj7kapRhsrIzobmr/view?usp=share_link" target=_blank rel=noopener>Video</a>
+                                </p>
+                            </div>
+                            <div class="pub-list-item view-citation" style=margin-bottom:1rem>
+                                <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+                                <span class="article-metadata li-cite-author">
+                                    <span>Jing Li</span>
+                                    , <span>Xiangfang Li</span>
+                                    , <span>Keliu Wu</span>
+                                    , <span>Dong Feng</span>
+                                    , <span>Tao Zhang</span>
+                                    , <span>Yifan Zhang</span>
+                                </span>
+                                (2017).
+<a href=/publication/ijcg-2017/>Thickness and Stability of Water Film Confined Inside Nanoslits and Nanocapillaries of Shale and Clay</a>
+                                .
+IJCG 2017.
+                                <p>
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href=https://www.sciencedirect.com/science/article/pii/S0166516217300435 target=_blank rel=noopener>PDF</a>
+                                    <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename=/publication/ijcg-2017/cite.bib>Cite</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id=experience class="home-section wg-experience">
+                <div class=home-section-bg></div>
+                <div class=container>
+                    <div class=row>
+                        <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                            <h1 class=mb-0>Experience</h1>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <div class="row experience">
+                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                    <div class="row h-50">
+                                        <div class=col>&nbsp;</div>
+                                        <div class=col>&nbsp;</div>
+                                    </div>
+                                    <div class=m-2>
+                                        <span class="badge badge-pill border">&nbsp;</span>
+                                    </div>
+                                    <div class="row h-50">
+                                        <div class="col border-right">&nbsp;</div>
+                                        <div class=col>&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class=card>
+                                        <div class=card-body>
+                                            <div class="d-flex align-content-start">
+                                                <div class="mr-2 mb-2">
+                                                    <a href=https://www.bytedance.com/en/ target=_blank rel=noopener>
+                                                        <img src=/media/icons/brands/bytedance.svg width=56px height=56px alt=ByteDance loading=lazy>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="section-subheading card-title exp-title text-muted my-0">Research Scientist Intern</div>
+                                                    <div class="section-subheading card-title exp-company text-muted my-0">
+                                                        <a href=https://www.bytedance.com/en/ target=_blank rel=noopener>ByteDance</a>
+                                                    </div>
+                                                    <div class="text-muted exp-meta">
+                                                        May 2023 –
+Aug 2023
+<span class=middot-divider></span>
+                                                        <span>San Jose, CA, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=card-text>
+                                                <p>Infrastructure Systems Lab</p>
+                                                <ul>
+                                                    <li>Enhancing the SQL pipeline using a hint recommendation system based on representation learning. This is an ongoing project by the time of completing this item.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row experience">
+                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-right">&nbsp;</div>
+                                        <div class=col>&nbsp;</div>
+                                    </div>
+                                    <div class=m-2>
+                                        <span class="badge badge-pill border exp-fill">&nbsp;</span>
+                                    </div>
+                                    <div class="row h-50">
+                                        <div class="col border-right">&nbsp;</div>
+                                        <div class=col>&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class=card>
+                                        <div class=card-body>
+                                            <div class="d-flex align-content-start">
+                                                <div class="mr-2 mb-2">
+                                                    <a href=https://www.vanderbilt.edu/ target=_blank rel=noopener>
+                                                        <img src=/media/icons/brands/vandy.svg width=56px height=56px alt="Vanderbilt University" loading=lazy>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="section-subheading card-title exp-title text-muted my-0">Graduate Research Assistant</div>
+                                                    <div class="section-subheading card-title exp-company text-muted my-0">
+                                                        <a href=https://www.vanderbilt.edu/ target=_blank rel=noopener>Vanderbilt University</a>
+                                                    </div>
+                                                    <div class="text-muted exp-meta">
+                                                        Apr 2022 –
+Present
+<span class=middot-divider></span>
+                                                        <span>Nashville, TN, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=card-text>
+                                                <p>Institute fot Software Integrated Systems</p>
+                                                <ul>
+                                                    <li>
+                                                        Built a contrastive learning method to facilitates representation learning of binary code visualized by distribution analysis, and improves the performance on all three downstream tasks of software engineering and security by 5.45% on average compared to state-of-the-art large-scale language representation models (under reivew by <a href=https://conf.researchr.org/home/issta-2023 target=_blank rel=noopener>ISSTA</a>
+                                                        ).
+                                                    </li>
+                                                    <li>
+                                                        Designed an AST-based representation for source code that leverages program structure and semantics to improve state-of-the-art code clone detection. Our experimental results show that the model improves state-of-the-art neural clone detection approaches by up to 6.6% in F-1 score (accepted by <a href=https://conf.researchr.org/home/icse-2023 target=_blank rel=noopener>ICSE</a>
+                                                        workshop).
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row experience">
+                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-right">&nbsp;</div>
+                                        <div class=col>&nbsp;</div>
+                                    </div>
+                                    <div class=m-2>
+                                        <span class="badge badge-pill border">&nbsp;</span>
+                                    </div>
+                                    <div class="row h-50">
+                                        <div class="col border-right">&nbsp;</div>
+                                        <div class=col>&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class=card>
+                                        <div class=card-body>
+                                            <div class="d-flex align-content-start">
+                                                <div class="mr-2 mb-2">
+                                                    <a href=https://duke.edu/ target=_blank rel=noopener>
+                                                        <img src=/media/icons/brands/duke.svg width=56px height=56px alt="Duke University" loading=lazy>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="section-subheading card-title exp-title text-muted my-0">Research Associate</div>
+                                                    <div class="section-subheading card-title exp-company text-muted my-0">
+                                                        <a href=https://duke.edu/ target=_blank rel=noopener>Duke University</a>
+                                                    </div>
+                                                    <div class="text-muted exp-meta">
+                                                        Jul 2021 –
+Jun 2022
+<span class=middot-divider></span>
+                                                        <span>Durham, NC, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=card-text>
+                                                <p>Duke University Health System</p>
+                                                <ul>
+                                                    <li>
+                                                        Designed a feature interpolation and reconstruction pipeline for injecting tumors into healthy images as an augmented dataset, and conjuncted a ViT on the outputs of a ResNet as inputs to a FPN in Faster R-CNN for tumor detection. The model mitigates the data-hungry problem of attention and achieves 13.1% improvement in AP50 for detecting tumors (accepted by <a href=https://conferences.miccai.org/2022/en/ target=_blank rel=noopener>MICCAI</a>
+                                                        workshop).
+                                                    </li>
+                                                    <li>
+                                                        Introduced a method for detecting anomalies in high-resolution medical images by sliding patches, and a domain generalization method by imposing constraints on the feature space and its projection space. Both of the two model achieve state-of-the-art in anomaly detection and domain generalization accuracy (submiteed to <a href=https://www.sciencedirect.com/journal/medical-image-analysis target=_blank rel=noopener>MIA</a>
+                                                        and <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42" target=_blank rel=noopener>IEEE-TMI</a>
+                                                        ).
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row experience">
+                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-right">&nbsp;</div>
+                                        <div class=col>&nbsp;</div>
+                                    </div>
+                                    <div class=m-2>
+                                        <span class="badge badge-pill border">&nbsp;</span>
+                                    </div>
+                                    <div class="row h-50">
+                                        <div class="col border-right">&nbsp;</div>
+                                        <div class=col>&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class=card>
+                                        <div class=card-body>
+                                            <div class="d-flex align-content-start">
+                                                <div class="mr-2 mb-2">
+                                                    <a href=https://www.hku.hk/ target=_blank rel=noopener>
+                                                        <img src=/media/icons/brands/hku.svg width=56px height=56px alt="The University of Hong Kong" loading=lazy>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="section-subheading card-title exp-title text-muted my-0">Senior Research Assistant</div>
+                                                    <div class="section-subheading card-title exp-company text-muted my-0">
+                                                        <a href=https://www.hku.hk/ target=_blank rel=noopener>The University of Hong Kong</a>
+                                                    </div>
+                                                    <div class="text-muted exp-meta">
+                                                        Mar 2021 –
+Sep 2021
+<span class=middot-divider></span>
+                                                        <span>Hong Kong SAR</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=card-text>
+                                                <p>HKU Business School</p>
+                                                <ul>
+                                                    <li>Built an entire intelligent debt collection system using data-driven deep reinforcement learning models. The model utilizes transformer as the feature extractor and attaches a offline policy gradient model trained on the embedded sequential-aware hidden features to propose long-term dependent decisions.</li>
+                                                    <li>
+                                                        Explored the application of GNNs on Finance and converted some of the ideas to a paper for addressing code clone detection (accepted by <a href=https://conf.researchr.org/home/icse-2023 target=_blank rel=noopener>ICSE</a>
+                                                        workshop).
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row experience">
+                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-right">&nbsp;</div>
+                                        <div class=col>&nbsp;</div>
+                                    </div>
+                                    <div class=m-2>
+                                        <span class="badge badge-pill border">&nbsp;</span>
+                                    </div>
+                                    <div class="row h-50">
+                                        <div class="col border-right">&nbsp;</div>
+                                        <div class=col>&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class=card>
+                                        <div class=card-body>
+                                            <div class="d-flex align-content-start">
+                                                <div class="mr-2 mb-2">
+                                                    <a href=https://corporate.jd.com/home target=_blank rel=noopener>
+                                                        <img src=/media/icons/brands/jd.svg width=56px height=56px alt=JD.COM loading=lazy>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="section-subheading card-title exp-title text-muted my-0">Data Scientist</div>
+                                                    <div class="section-subheading card-title exp-company text-muted my-0">
+                                                        <a href=https://corporate.jd.com/home target=_blank rel=noopener>JD.COM</a>
+                                                    </div>
+                                                    <div class="text-muted exp-meta">
+                                                        Dec 2018 –
+Mar 2021
+<span class=middot-divider></span>
+                                                        <span>Beijing, CN</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=card-text>
+                                                <p>Intelligent Risk Management Lab, JD Technology</p>
+                                                <ul>
+                                                    <li>Built Bi-GRU and DeepFM models on user behavior features to predict the credit use rate and overall profit of every user in cash loan and consumer debt. The model can propose decisions to increase their credit limit for maximizing income, and achieved 21.4% overall profit increase.</li>
+                                                    <li>Built a heterogeneous graph on different types of user connections, and applied GNN models to propagate the credit score. The model can improve the overall accuracy of the XGB model by 5% in user classification.</li>
+                                                    <li>
+                                                        Invented one kind of GAN-styled model using differential privacy to improve the efficiency and security of federated learning. Applied for 10 CN patents based on the research outputs, and was listed as 1st or 2nd inventor in 8 of them. One of the patents was awarded as 1st Runner-up in the 3rd <a href=https://blog.csdn.net/JDDTechTalk/article/details/109615799 target=_blank rel=noopener>JD Discovery Cup Patent Competition</a>
+                                                        (Top 0.1%).
+                                                    </li>
+                                                    <li>
+                                                        Authored Chapter 5 of <a href=https://www.amazon.cn/dp/B091GWK1Z6 target=_blank rel=noopener>Federated Learning: Technologies and Practices</a>
+                                                        .
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row experience">
+                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-right">&nbsp;</div>
+                                        <div class=col>&nbsp;</div>
+                                    </div>
+                                    <div class=m-2>
+                                        <span class="badge badge-pill border">&nbsp;</span>
+                                    </div>
+                                    <div class="row h-50">
+                                        <div class="col border-right">&nbsp;</div>
+                                        <div class=col>&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class=card>
+                                        <div class=card-body>
+                                            <div class="d-flex align-content-start">
+                                                <div class="mr-2 mb-2">
+                                                    <a href=https://www.udacity.com/ target=_blank rel=noopener>
+                                                        <img src=/media/icons/brands/udacity.svg width=56px height=56px alt=Udacity loading=lazy>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="section-subheading card-title exp-title text-muted my-0">Data Science Mentor</div>
+                                                    <div class="section-subheading card-title exp-company text-muted my-0">
+                                                        <a href=https://www.udacity.com/ target=_blank rel=noopener>Udacity</a>
+                                                    </div>
+                                                    <div class="text-muted exp-meta">
+                                                        May 2018 –
+Apr 2019
+<span class=middot-divider></span>
+                                                        <span>Shanghai, CN</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=card-text>
+                                                <p>Institute for Data Science</p>
+                                                <ul>
+                                                    <li>Taught VIP students Python, statistics, machine learning and data mining</li>
+                                                    <li>Organized online community activities and created instructional materials</li>
+                                                    <li>
+                                                        Awarded <a href=https://www.udacity.com/start-mentoring target=_blank rel=noopener>Oustanding Mentor</a>
+                                                        of Udacity China (Top 1%)
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row experience">
+                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-right">&nbsp;</div>
+                                        <div class=col>&nbsp;</div>
+                                    </div>
+                                    <div class=m-2>
+                                        <span class="badge badge-pill border">&nbsp;</span>
+                                    </div>
+                                    <div class="row h-50">
+                                        <div class=col>&nbsp;</div>
+                                        <div class=col>&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class=card>
+                                        <div class=card-body>
+                                            <div class="d-flex align-content-start">
+                                                <div class="mr-2 mb-2">
+                                                    <a href=https://www.ucalgary.ca/ target=_blank rel=noopener>
+                                                        <img src=/media/icons/brands/ucalgary.svg width=56px height=56px alt="University of Calgary" loading=lazy>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="section-subheading card-title exp-title text-muted my-0">Undergraduate Visiting Student</div>
+                                                    <div class="section-subheading card-title exp-company text-muted my-0">
+                                                        <a href=https://www.ucalgary.ca/ target=_blank rel=noopener>University of Calgary</a>
+                                                    </div>
+                                                    <div class="text-muted exp-meta">
+                                                        Dec 2015 –
+May 2016
+<span class=middot-divider></span>
+                                                        <span>Calgary, AB, CA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=card-text>
+                                                <p>Schulich School of Engineering</p>
+                                                <ul>
+                                                    <li>Fullly funded by Chinese National Fellowship for overseas research</li>
+                                                    <li>Worked on an undergraduate thesis project in the Reservoir Simulation Group with Professor Keliu Wu.</li>
+                                                    <li>
+                                                        Collaborated on one paper accepted by <a href=https://www.sciencedirect.com/journal/international-journal-of-coal-geology target=_blank rel=noopener>International Journal of Coal Geology</a>
+                                                        (IF: 6.806).
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id=awards class="home-section wg-accomplishments">
+                <div class=home-section-bg></div>
+                <div class=container>
+                    <div class=row>
+                        <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                            <h1 class=mb-0>Funds &Awards</h1>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <div class="card experience course">
+                                <div class=card-body>
+                                    <div class="section-subheading card-title exp-title text-muted my-0">First Runner-up in the 3rd JD.COM Patent Competition</div>
+                                    <div class="card-subtitle my-0 article-metadata">
+                                        JD.COM<span class=middot-divider></span>
+                                        Jul 2020
+                                    </div>
+                                    <div class=card-text>Employee award for distinguished profit-making technical innovation at JD.COM (Top %0.1 company-wide)</div>
+                                </div>
+                            </div>
+                            <div class="card experience course">
+                                <div class=card-body>
+                                    <div class="section-subheading card-title exp-title text-muted my-0">Silver Medal Award of Distinguished JD.COM Technical Recruiter</div>
+                                    <div class="card-subtitle my-0 article-metadata">
+                                        JD.COM<span class=middot-divider></span>
+                                        Jun 2020
+                                    </div>
+                                    <div class=card-text>Employee award for distinguished interviewers at JD.COM (Top %5 company-wide)</div>
+                                </div>
+                            </div>
+                            <div class="card experience course">
+                                <div class=card-body>
+                                    <div class="section-subheading card-title exp-title text-muted my-0">Bronze Medal Award of Certified JD.COM Technical Instructor</div>
+                                    <div class="card-subtitle my-0 article-metadata">
+                                        JD.COM<span class=middot-divider></span>
+                                        May 2020
+                                    </div>
+                                    <div class=card-text>Employee award for certified JD.COM technical instructor</div>
+                                </div>
+                            </div>
+                            <div class="card experience course">
+                                <div class=card-body>
+                                    <div class="section-subheading card-title exp-title text-muted my-0">Beijing Outstanding Graduate Award</div>
+                                    <div class="card-subtitle my-0 article-metadata">
+                                        Beijing Ministry of Education<span class=middot-divider></span>
+                                        Jun 2019
+                                    </div>
+                                    <div class=card-text>Student award for outstanding graduates at Beijing (Top 0.1% nationwide)</div>
+                                </div>
+                            </div>
+                            <div class="card experience course">
+                                <div class=card-body>
+                                    <div class="section-subheading card-title exp-title text-muted my-0">Roberto Roca Education Fellowship</div>
+                                    <div class="card-subtitle my-0 article-metadata">
+                                        Tenaris<span class=middot-divider></span>
+                                        Oct 2017
+                                    </div>
+                                    <div class=card-text>Fellowship for outstanding graduate students in China (Top 10 nationwide)</div>
+                                </div>
+                            </div>
+                            <div class="card experience course">
+                                <div class=card-body>
+                                    <div class="section-subheading card-title exp-title text-muted my-0">Chinese National Fellowship</div>
+                                    <div class="card-subtitle my-0 article-metadata">
+                                        Chinese Ministry of Education<span class=middot-divider></span>
+                                        Dec 2015
+                                    </div>
+                                    <div class=card-text>Fellowship for undergraduate students in overseas study (CA$6000/4 months)</div>
+                                </div>
+                            </div>
+                            <div class="card experience course">
+                                <div class=card-body>
+                                    <div class="section-subheading card-title exp-title text-muted my-0">Dean &rsquo;s List for the Best Undergraduate Students</div>
+                                    <div class="card-subtitle my-0 article-metadata">
+                                        China University of Petroleum, Beijing<span class=middot-divider></span>
+                                        Jun 2015
+                                    </div>
+                                    <div class=card-text>Student award for the best undergraduates (Top 4 university-wide)</div>
+                                </div>
+                            </div>
+                            <div class="card experience course">
+                                <div class=card-body>
+                                    <div class="section-subheading card-title exp-title text-muted my-0">Schlumberger Engineering Fellowship</div>
+                                    <div class="card-subtitle my-0 article-metadata">
+                                        Schlumberger<span class=middot-divider></span>
+                                        Oct 2014
+                                    </div>
+                                    <div class=card-text>Fellowship for outstanding undergraduate students (Top 8 university-wide)</div>
+                                </div>
+                            </div>
+                            <div class="card experience course">
+                                <div class=card-body>
+                                    <div class="section-subheading card-title exp-title text-muted my-0">Chinese National Scholarship</div>
+                                    <div class="card-subtitle my-0 article-metadata">
+                                        Chinese Ministry of Education<span class=middot-divider></span>
+                                        Oct 2013
+                                    </div>
+                                    <div class=card-text>Scholarship for top undergraduate students in China (Top 0.2% nationwide)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id=services class="home-section wg-markdown">
+                <div class=home-section-bg></div>
+                <div class=container>
+                    <div class=row>
+                        <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                            <h1 class=mb-0>Services</h1>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <h3 id=academic-mentorship>Academic Mentorship</h3>
+                            <ul>
+                                <li>
+                                    2023 <a href=https://www.linkedin.com/in/ryan-li-4a5771172/ target=_blank rel=noopener>Ryan Li</a>
+                                    , undergraduate student in Computer Science at Vanderbilt University
+                                </li>
+                                <li>
+                                    2022 <a href=https://www.linkedin.com/in/jiliang-eric-li/ target=_blank rel=noopener>Eric Li</a>
+                                    , undergraduate student in Computer Science &Mathematics at Vanderbilt University
+                                </li>
+                            </ul>
+                            <h3 id=program-comittee-pc-member>Program Comittee (PC) Member</h3>
+                            <ul>
+                                <li>2024 AAAI Conference on Artificial Intelligence (AAAI)</li>
+                                <li>2023 Conference on Machine Learning and Systems (MLSys) Artifact Evaluation Track</li>
+                                <li>2023 International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)</li>
+                                <li>2023 AAAI Workshop on DL-Hardware Co-Design for AI Acceleration (AAAI-DCAA)</li>
+                                <li>2023 International Conference on Mining Software Repositories (MSR)</li>
+                                <li>2023 AAAI Conference on Artificial Intelligence (AAAI)</li>
+                                <li>2022 MICCAI Workshop on Cancer Prevention through early detecTion (MICCAI-CaPTion)</li>
+                            </ul>
+                            <h3 id=external-conference-reviewer>External Conference Reviewer</h3>
+                            <ul>
+                                <li>2024 International Conference on Very Large Data Bases (VLDB)</li>
+                                <li>2023 USENIX Security Symposium (USENIX)</li>
+                                <li>2022 Computer Vision and Pattern Recognition Conference (CVPR)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id=contact class="home-section wg-contact">
+                <div class=home-section-bg></div>
+                <div class=container>
+                    <div class=row>
+                        <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                            <h1 class=mb-0>Contact</h1>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <ul class=fa-ul>
+                                <li>
+                                    <i class="fa-li fas fa-envelope fa-2x" aria-hidden=true></i>
+                                    <span id=person-email>
+                                        <a href=mailto:yifan.zhang.2@vanderbilt.edu>yifan.zhang.2@vanderbilt.edu</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-li fas fa-phone fa-2x" aria-hidden=true></i>
+                                    <span id=person-telephone>
+                                        <a href=tel:+1%20919%20638-0501>+1 919 638-0501</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-li fas fa-map-marker fa-2x" aria-hidden=true></i>
+                                    <span id=person-address>1400 18th Ave S, Nashville, TN 37212</span>
+                                </li>
+                                <li>
+                                    <i class="fa-li fab fa-twitter fa-2x" aria-hidden=true></i>
+                                    <a href=https://twitter.com/Twitter target=_blank rel=noopener>DM Me on Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class=page-footer>
+            <div class=container>
+                <footer class=site-footer>
+                    <p class="powered-by copyright-license-text">
+                        © 2023 Me. This work is licensed under <a href=https://creativecommons.org/licenses/by-nc-nd/4.0 rel="noopener noreferrer" target=_blank>CC BY NC ND 4.0</a>
+                    </p>
+                    <p class="powered-by footer-license-icons">
+                        <a href=https://creativecommons.org/licenses/by-nc-nd/4.0 rel="noopener noreferrer" target=_blank aria-label="Creative Commons">
+                            <i class="fab fa-creative-commons fa-2x" aria-hidden=true></i>
+                            <i class="fab fa-creative-commons-by fa-2x" aria-hidden=true></i>
+                            <i class="fab fa-creative-commons-nc fa-2x" aria-hidden=true></i>
+                            <i class="fab fa-creative-commons-nd fa-2x" aria-hidden=true></i>
+                        </a>
+                    </p>
+                    <p class=powered-by></p>
+                </footer>
+            </div>
+        </div>
+        <script src=/js/vendor-bundle.min.fab8b449b814cc9f95b22fcf2e45f05b.js></script>
+        <script id=search-hit-fuse-template type=text/x-template>
+            
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  
+        </script>
+        <script src=https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin=anonymous></script>
+        <script src=https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin=anonymous></script>
+        <script id=page-data type=application/json>
+            {"use_headroom":false}
+        </script>
+        <script src=/en/js/wowchemy.min.0c1be879804fa6ae06a8f4c131cdbf54.js></script>
+        <div id=modal class="modal fade" role=dialog>
+            <div class=modal-dialog>
+                <div class=modal-content>
+                    <div class=modal-header>
+                        <h5 class=modal-title>Cite</h5>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+                            <span aria-hidden=true>&#215;</span>
+                        </button>
+                    </div>
+                    <div class=modal-body>
+                        <pre>
+                            <code></code>
+                        </pre>
+                    </div>
+                    <div class=modal-footer>
+                        <a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank>
+                            <i class="fas fa-copy"></i>
+                            Copy
+                        </a>
+                        <a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank>
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                        <div id=modal-error></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src=/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js type=module></script>
+    </body>
+</html>
